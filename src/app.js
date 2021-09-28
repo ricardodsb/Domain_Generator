@@ -6,7 +6,9 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = () => {
-  document.querySelector("#domain").innerHTML = generateDomain();
+  document.querySelector("#generator").addEventListener("click", () => {
+    document.querySelector("#domain").innerHTML = generateDomain();
+  });
 };
 const generateDomain = () => {
   let pronoun = ["the", "our", "my"];
